@@ -1,7 +1,6 @@
 [submodule "themes/hugo-sustain"]
 	path = themes/hugo-sustain
 	url = https://github.com/nurlansu/hugo-sustain.git
-[submodule "public/jkomoroski.github.io"]
-	path = public/jkomoroski.github.io
+[submodule "public"]
+	path = public
 	url = git@github.com:JKomoroski/jkomoroski.github.io.git
-	branch = master
