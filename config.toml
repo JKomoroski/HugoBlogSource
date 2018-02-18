@@ -1,0 +1,40 @@
+baseURL = "https://localhost:1313"
+languageCode = "en-us"
+title = "Kasual Komoroski"
+theme = "hugo-sustain"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+  
+[params]
+  description = "A Technical Blog"
+  author = "Jared Komoroski"
+  avatar = "avatar.jpg"
+  
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "jkomoroski"
+  Email         = "jared.komoroski@gmail.com"
+  LinkedIn      = "jared-komoroski"
+  # Twitter        "username"
+  # Stackoverflow = "username"
+
+## Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog/"
+[[menu.main]]
+  name = "projects"
+  identifier = "projects"
+  weight = 200
+  url = "/projects/"
+[[menu.main]]
+  name = "resume"
+  identifier = "resume"
+  weight = 300
+  url = "/resume/"
