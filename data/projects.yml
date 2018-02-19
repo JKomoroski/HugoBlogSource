@@ -1,22 +1,36 @@
 name: Projects
 source:
   - icon: fa fa-github
-    description: Ei viderer tacimates pro, quem assum ea nam. Veritus omnesque eam te. Et natum mucius tamquam vel, ea dolorem volumus deterruisset nec. Graeci mentitum sea an, eu prima elaboraret est.
+    name: shorturl
+    url: "https://github.com/JKomoroski/shorturl"
+    description: A simple url shortener app written in go. Plans to write a postgres dao for it.
 
   - icon: fa fa-github
-    description: An eripuit phaedrum qui, nec facer splendide ex, vel ea assum facilisi convenire. Te his neglegentur consectetuer.
+    name: HugoBlogSource
+    url: "https://github.com/JKomoroski/HugoBlogSource"
+    description: This blog's source generator. The hugo project outputs static site files.
 
   - icon: fa fa-github
-    description: An alii quot tantas eum, doming platonem persecuti mea et, vim perpetua cotidieque delicatissimi in.
-  
-  - icon: fa fa-globe
-    description: Vim an case vidit sententiae, est at euismod laboramus efficiantur. Ei sit brute lorem, ea eam timeam viderer aliquid, cu integre omittam moderatius quo.
+    name: PlatoonLeader
+    url: "https://github.com/JKomoroski/PlatoonLeader"
+    description: An Android app based on the classic board game Panzer Leader.
 
-  - icon: fa fa-globe
-    description: Dicta causae meliore ex vel, in vix erant integre petentium. Vix ei nisl scripta recusabo, eam doming blandit facilisis.
+  - icon: fa fa-github
+    name: Alianza Support Tools
+    url: "https://github.com/JKomoroski/ALZ_SUPPORT_TOOLS"
+    description: An extendable Express.js server used to host device lab files.
 
-  - icon: fa fa-cog
-    description: Inermis recusabo elaboraret mea et, dicat neglegentur vim te. Nec et sanctus scriptorem, usu ex sapientem gubergren. Tamquam admodum ei usu.
+  - icon: fas fa-server
+    name: Komo-Kube
+    url: "#"
+    description: A collection related to my homelab deployment of kubernetes.
 
-  - icon: fa fa-cog
-    description: Essent putant indoctum sed in, reprimique persequeris neglegentur te quo. Nam rebum tractatos partiendo at, debet ubique oporteat ut his.
+  - icon: fas fa-server
+    name: Home Lab Services
+    url: "#"
+    description: A collection of Kubernetes YAML files used to deploy various service on my cluster.
+
+  - icon: fas fa-cogs
+    name: Unbound
+    url: "#"
+    description: The Unbound configuration file used to provide DNS service on my network.
