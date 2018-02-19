@@ -1,7 +1,7 @@
 ---
 title: "Hello World!"
 date: 2018-02-17T21:41:29-07:00
-draft: true 
+draft: false 
 ---
 
 This is my first post on my [Hugo](https://gohugo.io) powered blog. My goal with this blog at this time is to document various technical guides to projects I'm currently involved in. Currently, my projects are fairly limited in scope, focused on a single node Kubernetes cluster run off a home server with various web applications and databases running on it. In the future, I hope to move from some of the more DevOps focused tasks I'm working on to more code-centric projects. My
