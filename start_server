@@ -1,0 +1,35 @@
+#!/bin/sh
+
+# Parse options for this script
+# Extensable for future additions
+BEGIN=true
+END=false
+while getopts "eh?" option
+do
+    case "${option}"
+        in
+        e)
+            BEGIN=false
+            END=true
+            ;;
+        h)
+            printf '%s\n' "Use flag -e (end) to end development, default behavior starts development."
+            ;;
+        *)
+            printf '%s\n' "Use flag -e (end) to end development, default behavior starts development."
+            ;;
+    esac
+done
+
+if [ $BEGIN == true ]
+then
+    printf '%s\n' "Beginning Development, Starting Hugo Server" \
+    && `hugo server -w -D -F --disableFastRender >> /dev/null &` \
+    && printf '%s\n' "Hugo Server Started" \
+    && printf '%s\n' "http://localhost:1313"
+elif [ $END == true ]
+then
+    printf '%s\n' "Stopping Hugo Server..." \
+    && killall hugo >> /dev/null \
+    && printf '%s\n' "Hugo Server Stopped!"
+fi
