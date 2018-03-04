@@ -2,6 +2,7 @@ baseURL = "https://jkomoroski.github.io/"
 languageCode = "en-us"
 title = "Kasual Komoroski"
 theme = "hugo-sustain"
+disqusShortname = "kasualkomoroski"
 
 [permalinks]
   post = "/:year/:month/:day/:slug"
@@ -19,7 +20,7 @@ theme = "hugo-sustain"
   Github        = "jkomoroski"
   Email         = "jared.komoroski@gmail.com"
   LinkedIn      = "jared-komoroski"
-  # Twitter        "username"
+  Twitter       = "JaredKomoroski"
   # Stackoverflow = "username"
 
 ## Main Menu
