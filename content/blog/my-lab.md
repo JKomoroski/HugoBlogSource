@@ -1,6 +1,7 @@
 ---
 title: "My Lab"
 date: 2018-02-20T21:10:29-07:00
+tags: [homelab, hardware, about]
 draft: false 
 ---
 Before I provide any guides on my various running projects, I feel the need to describe the lab that I have at my disposal. Today, the lab is very simple consisting of the following hardware components:
