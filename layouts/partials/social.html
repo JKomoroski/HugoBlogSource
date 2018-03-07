@@ -19,5 +19,9 @@
     {{ if .Site.Params.Social.Stackoverflow }}
       <li><a href="http://stackoverflow.com/{{ .Site.Params.Social.Stackoverflow }}"><i class="fa fa-stack-overflow"></i></a></li>
     {{ end }}
+
+    {{if .Site.Params.Social.RSS }}
+    <li><a href="{{ .Site.Params.Social.RSS }}"><i class="fa fa-rss"></i></a></li>
+    {{end}}
   </ul>
 </div>

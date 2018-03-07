@@ -21,6 +21,7 @@ disqusShortname = "kasualkomoroski"
   Email         = "jared.komoroski@gmail.com"
   LinkedIn      = "jared-komoroski"
   Twitter       = "JaredKomoroski"
+  RSS           = "/blog/index.xml"
   # Stackoverflow = "username"
 
 ## Main Menu
