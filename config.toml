@@ -5,7 +5,7 @@ theme = "hugo-sustain"
 disqusShortname = "kasualkomoroski"
 
 [permalinks]
-  post = "/:year/:month/:day/:slug"
+  blog = "/:year/:month/:day/:slug"
   
 [params]
   description = "A Technical Blog"
