@@ -9,7 +9,7 @@ Now that I've got my blog set up I thought I should share the set up I use scrip
 If you don't know what Hugo is, I suggest you [check it out](https://gohugo.io). At its core a static site generator that takes markdown files and compiles them into static html files, but it does so much more. Packaged with the file compiler is a webserver that uses websockets to support a live reload feature. What this means in practice is that if you have a text editor that has an auto save feature, you can simply start up the server and start writing a post and watch it reload
 in a broswer window. 
 
-My text editor of choice is [Neovim](https://neovim.io/), which is a refactor of Vim. I like the ideas behind the project and have yet to come across any downsides of it compared to Vim. In order to enable autosave started in the editor, I open a new file and while I'm in command mode enter:
+My text editor of choice is [Neovim](https://neovim.io/), which is a refactor of Vim. I like the ideas behind the project and have yet to come across any downsides of it compared to Vim. In order to enable autosave in the editor, I open a new file and enter the following while in command mode:
 
 ```autocmd TextChanged,TextChangedI <buffer> silent write```
 
@@ -68,7 +68,7 @@ This outputs:
 
 `2018-03-03T15:57:18-0700`
 
-This does not work with hugo because it is not completely ISO 8601 compliant as the timezone offset should be colon delimited between the hour and minut offset. Your output will vary depeinding on the implimentation of strftime() on your system. My system is using a BSD implimentation with the following gem in the man page:
+This does not work with hugo because it is not completely ISO 8601 compliant as the timezone offset should be colon delimited between the hour and minute offset. Your output will vary depeinding on the implimentation of strftime() on your system. My system is using a BSD implimentation with the following gem in the man page:
 
 ```
 BUGS
