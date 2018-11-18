@@ -1,7 +1,7 @@
 ---
 title: "My Zsh Setup"
 date: 2018-03-25T14:19:49-06:00
-tags: [shell, config]
+tags: [shell, config, cli]
 draft: false 
 ---
 
@@ -13,9 +13,9 @@ To start, I've installed and set Zsh as my default shell. Zsh has many built-in 
 * Improved Command Tab Completion
 * Path Expansion
 * Right Prompt Display
-* Spelling Autocorrect or Prompted Correction
+* Spelling Auto-Correct or Prompted Correction
 * Global Aliases (aliases that appear anywhere in your command string)
-* Extended Globbing Capatilites
+* Extended Globbing Capabilities
 
 If you'd like more detailed documentation on what sets Zsh apart, take a look a the Zsh FAQ [here](http://zsh.sourceforge.net/FAQ/zshfaq02.html). A particularly exciting part of Zsh is the active community behind it. There are several plugin managers, and a host of people building plugins for what seems like every command line tool, and creating more themes than should ever be necessary.
 
@@ -28,4 +28,4 @@ shows my go to tmux window, running zsh with a scratch pane and my task list ope
 
 ---
 
-That's the intro to my favorite shell. I intend to write a guide to use my setup in the future, but for now I've settled with expressing my passion for the tool I've come to love.:
+That's the intro to my favorite shell. I intend to write a guide to use my setup in the future, but for now I've settled with expressing my passion for the tool I've come to love.
