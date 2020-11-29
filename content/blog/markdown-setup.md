@@ -52,15 +52,21 @@ then
     && printf '%s\n' "Hugo Server Stopped!"
 fi
 ```
-My goal with that script is to try to remain posix compliant in the script, so it will be portable to my future machines or to workstations other than my own. In brief, the script will start the hugo server in the current directory with a specific set of flags. It has a `-h` flag for help in
-the event that anyone else clones it and if the script is passed the `-e` flag it will end the current session. It's not the best bash script and there are better ways to do it, but it gets the job done. 
+My goal with that script is to try to remain posix compliant in the script, so it will be portable to my future machines
+ or to workstations other than my own. In brief, the script will start the hugo server in the current directory with a 
+ specific set of flags. It has a `-h` flag for help in the event that anyone else clones it and if the script is used 
+ with the `-e` flag it will end the current session. It's not the best bash script and there are better ways to do it, 
+ but it gets the job done. 
 
-Unfortunately, I can't launch my browser of choice from the script at the time of start up because OSX and firefox don't play nice, so that piece is still manual at this time. However, I do echo the the localhost url that the blog is hosted on so I can use my terminal's parse for url feature to simply open the blog on a new page. 
+Unfortunately, I can't launch my browser of choice from the script at the time of start up because OSX and firefox 
+ don't play nice, so that piece is still manual at this time. However, I do echo the localhost hugo port, and use my 
+ terminal "parse for url" feature to simply open the blog on a new page. 
 
 ---
 ---
 
-While getting this set up, I did find it some what annoying that I had to type out the current date/time everytime I started a .md file from scratch. I found this little gem of a command: 
+While getting this set up, I did find typing out the current date/time everytime I started a .md file from
+ scratch tedious and annoying. I found this little gem of a command: 
 
 `:put =strftime('%FT%T%z')` 
 
@@ -68,8 +74,12 @@ This outputs:
 
 `2018-03-03T15:57:18-0700`
 
-This does not work with hugo because it is not completely ISO 8601 compliant as the timezone offset should be colon delimited between the hour and minute offset. Your output will vary depeinding on the implimentation of strftime() on your system. My system is using a BSD implimentation with the following gem in the man page:
-
+This does not work with hugo because it is not completely ISO 8601 compliant as the timezone offset should be colon 
+ delimited between the hour and minute offset. Your output may vary depending on the implementation of `strftime()` 
+ on your system. I found on my Linux system that the shell command `date +%FT%T%:z` works, so calling this from Nvim
+ with proper escapes suits me: `r!date "+\%FT\%T\%:z"` . 
+ 
+My system is using a BSD `strftime()` implementation with the had the following gem in the man page:
 ```
 BUGS
      There is no conversion specification for the phase of the moon.

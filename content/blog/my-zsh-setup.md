@@ -19,12 +19,12 @@ To start, I've installed and set Zsh as my default shell. Zsh has many built-in 
 
 If you'd like more detailed documentation on what sets Zsh apart, take a look a the Zsh FAQ [here](http://zsh.sourceforge.net/FAQ/zshfaq02.html). A particularly exciting part of Zsh is the active community behind it. There are several plugin managers, and a host of people building plugins for what seems like every command line tool, and creating more themes than should ever be necessary.
 
-I use the [Oh My Zsh](http://ohmyz.sh/) configuration manager. It helps breakdown my .zshrc (zsh config) file into more managable pieces. You can see my .zshrc file [here](https://raw.githubusercontent.com/JKomoroski/dotfiles/master/.zshrc). I used the default config they provided as a starting point, but I've slowly added my own aliases and adjusted the agnoster theme to suit my needs over time. I use a vim binding so I can edit lines with vim text navigation. The screen shot below
+I use the [Oh My Zsh](http://ohmyz.sh/) configuration manager. It helps breakdown my .zshrc (zsh config) file into more manageable pieces. You can see my .zshrc file [here](https://raw.githubusercontent.com/JKomoroski/dotfiles/master/.zshrc). I used the default config they provided as a starting point, but I've slowly added my own aliases and adjusted the agnoster theme to suit my needs over time. I use a vim binding so I can edit lines with vim text navigation. The screen shot below
 shows my go to tmux window, running zsh with a scratch pane and my task list open in adjacent panes. I'll have more on tmux and taskwarrior in the near future.  
 
 ---
 
-<img src="/img/zsh_view.png" alt="Tmux and Zsh running on iTerm2" style="width: 750px;"/>
+<img src="/img/zsh_view.png" alt="Tmux and Zsh running on iTerm2" class="container"/>
 
 ---
 

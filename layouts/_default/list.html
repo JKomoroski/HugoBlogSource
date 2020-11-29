@@ -21,7 +21,19 @@
                 </div>
               </div>
             {{ end }}
-            </div>
+              <div class="related-posts">
+                <h5>Tags</h5>
+                {{range $name, $taxonomy := .Site.Taxonomies.tags }} {{ $cnt := .Count }}
+                {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                {{ if and (ne $name "about") (ne $name "projects") }}
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                  <h5 style="text-align: left">
+                    <strong><a href="{{ .RelPermalink }}">{{$name}} ({{$cnt}})</a></strong>
+                  </h5>
+                </div>
+                {{ end }}
+                {{ end }}
+                {{ end }}
           </div>
       </div>
     </div>

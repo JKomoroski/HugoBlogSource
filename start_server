@@ -1,8 +1,5 @@
 #!/bin/sh
-# Assumes OSX firefox install location
-# Assumes LocalDev Firefox Profile
-# Parse options for this script
-# Extensable for future additions
+
 BEGIN=true
 END=false
 while getopts "eh?" option
@@ -25,11 +22,11 @@ done
 if [ $BEGIN == true ]
 then
     printf '%s\n' "Beginning Development, Starting Hugo Server" \
-    && `hugo server -w -D -F --disableFastRender >> /dev/null &` \
+    && $(hugo server -w -D -F --disableFastRender >> /dev/null &) \
     && printf '%s\n' "Hugo Server Started" \
     && printf '%s\n' "http://localhost:1313"\
     && printf '%s\n' "Starting Nightly..."\
-    && `/Applications/FirefoxNightly.app/Contents/MacOS/firefox -new-instance -P "LocalDev" -private-window http://localhost:1313 >> /dev/null 2>&1 &`
+    && $(firefox --private-window localhost:1313  >> /dev/null 2>&1 &)
 elif [ $END == true ]
 then
     printf '%s\n' "Stopping Hugo Server..." \
