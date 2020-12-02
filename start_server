@@ -43,7 +43,7 @@ then
     progress_bar 0 25
     println "Hugo Server Started"
     println "http://localhost:1313"
-    println "Starting Nightly..."
+    println "Starting Firefox..."
     firefox --private-window localhost:1313  >> /dev/null 2>&1 &
 elif [ $END == true ]
 then
