@@ -2,8 +2,13 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+# Go To Public folder and checkout self_hosted branch
+cd public
+git checkout self_hosted
+cd ..
+
 # Build the project.
-hugo -t hugo-sustain
+hugo -t hugo-sustain --minify
 
 # Go To Public folder
 cd public
@@ -19,7 +24,7 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push origin master
+git push origin self_hosted
 
 # Come Back up to the Project Root
 cd ..
