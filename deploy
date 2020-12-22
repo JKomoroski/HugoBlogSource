@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
@@ -28,4 +28,3 @@ git push origin self_hosted
 
 # Come Back up to the Project Root
 cd ..
-

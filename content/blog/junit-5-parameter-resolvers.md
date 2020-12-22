@@ -1,4 +1,4 @@
----
+, :---
 title: "Junit 5 Parameter Resolver Extensions"
 date: 2020-11-29T22:57:00-07:00
 tags: [java, junit, testing]
@@ -110,4 +110,3 @@ class MyClassTest {
 
 When working with Junit 5, and particularly when developing a testing framework, working with parameter resolvers 
  should be second nature.
- 
