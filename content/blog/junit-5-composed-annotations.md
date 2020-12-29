@@ -27,7 +27,7 @@ class MyClassTest {
 Or:
 ```java
 ...
-ExtendWith({
+@ExtendWith({
   MyFirstTestExtension.class,
   MySecondTestExtension.class,
   MyRequiredTestExtension.class,
