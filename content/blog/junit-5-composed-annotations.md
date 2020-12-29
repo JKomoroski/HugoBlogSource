@@ -53,7 +53,7 @@ Composed annotations are annotations which are themselves annotated. Allowing a 
 ...
 @Target({ ElementType.TYPE, ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
-ExtendWith({
+@ExtendWith({
   MyFirstTestExtension.class,
   MySecondTestExtension.class,
   MyRequiredTestExtension.class,
