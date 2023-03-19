@@ -1,3 +1,9 @@
+---
+title: "Setting Up Pico Development in Fedora"
+date: 2021-02-16T22:57:00-07:00
+tags: [rust, embedded, raspberry-pi-pico]
+draft: false
+---
 # Setting Up Pico Development in Fedora
 
 Things to install:
