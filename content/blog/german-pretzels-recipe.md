@@ -5,8 +5,6 @@ tags: [recipe]
 draft: false
 ---
 
-# German Pretzels
-
 ---
 
 __Yield:__ 12 Pretzels
